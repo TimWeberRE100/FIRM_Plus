@@ -1,0 +1,110 @@
+// Demand
+population = 50000000;
+demand_per_capita = 5;
+
+// Simulation period
+startYear
+endYear
+resolution = 1;
+
+// Differential Evolution
+mutations = 0.5;
+recombination = 0.3;
+popsize = 10;
+iterations = 2000;
+
+// Scenarios
+solarOn = true;
+windOn = true;
+
+batteriesOn = true;
+phesOn = true;
+
+nuclearOn = true;
+fossilOn = false;
+
+hydrogenOn = true;
+hydroOn = true;
+bioOn = true;
+
+interOn = true;
+demandManageOn = true;
+
+networkName = "NEM";
+
+// Reliability
+reliabilityPercent = 0.002; // Percentage (%) of annual demand that may not be met
+
+// Constraints
+hydroAnnualGen
+bioAnnualGen
+fossilAnnualGen
+hydrogenAnnualGen
+interAnnualImports
+
+// Storage round-trip efficiency
+phesEff = 0.8;
+batteryEff = 0.9;
+
+// Transmission losses
+hvdcLossFactor = 0.03;
+hvacLossFactor = 0.07;
+
+// Costs
+demandManageCost = 200;
+
+hydroLCOE = 50;
+bioLCOE = 100;
+fossilLCOE = 100;
+interLCOE = 50;
+
+solarCAPEX =
+solarFOM =
+solarVOM =
+solarLifetime =
+solarDiscountRate
+
+windCAPEX =
+windFOM
+windVOM
+windLifetime
+windDiscountRate
+
+phesCAPEX_P
+phesCAPEX_E
+phesFOM
+phesVOM
+phesPOM
+phesPOM_period
+phesLifetime
+phesDiscountRate
+
+batteryCAPEX_P
+batteryCAPEX_E
+batteryFOM
+batteryVOM
+batteryLifetime
+batteryDiscountRate
+
+hydrogenCAPEX
+hydrogenFOM
+hydrogenVOM
+hydrogenFuel
+hydrogenLifetime
+hydrogenDiscountRate
+
+hvdcCAPEX
+hvdcFOM
+hvdcLifetime
+
+hvacCAPEX
+hvacFOM
+hvacLifetime
+
+subseaCAPEX
+subseaFOM
+subseaLifetime
+
+converterCAPEX
+converterFOM
+converterLifetime
